@@ -20,4 +20,4 @@ end
 
 oldfake.split[0] =~ /[aeiou]/ ? oldfake.split[0].gsub(/([aeiou])(\w+)*/, '\1\2way') : oldfake.split[0].gsub(/([^aeiou])(\w+)*/, '\2\1ay')
 
-oldfake.split[1][0] =~ /[aeiou]/ ? oldfake.split[1][0].gsub(/([aeiou])(\w+)*/, '\1\2way') : oldfake.split[1][0].gsub(/([^aeiou])(\w+)*/, '\2\1ay')
+oldfake.split[1][0] =~ /[aeiou]/ ? oldfake.split[1].gsub(/([aeiou])(\w+)*/, '\1\2way') : oldfake.split[1].gsub(/([^aeiou])(\w+)*/, '\2\1ay')
