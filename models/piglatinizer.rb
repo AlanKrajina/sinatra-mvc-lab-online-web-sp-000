@@ -2,7 +2,7 @@ class PigLatinizer
 
 
   def piglatinize(word)
-    if word.length == 1
+    if word.split.length == 1
       word[0] =~ /[aeiou]/ ? word.gsub(/([aeiou])(\w+)*/, '\1\2way') : word.gsub(/([^aeiou])(\w+)*/, '\2\1ay')
       
     else
