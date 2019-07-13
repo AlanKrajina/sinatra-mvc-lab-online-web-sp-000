@@ -2,12 +2,11 @@ class PigLatinizer
 
 
   def piglatinize(word)
-  oldfake = "noodle soup"
-  fake = oldfake.split
-fake[0] =~ /[aeiou]/ ? fake.gsub(/([aeiou])(\w+)*/, '\1\2way') : fake.gsub(/([^aeiou])(\w+)*/, '\2\1ay')
 
+word.split[0][0] =~ /[aeiou]/ ? word.split[0].gsub(/([aeiou])(\w+)*/, '\1\2way') : word.split[0].gsub(/([^aeiou])(\w+)*/, '\2\1ay')
 
-binding.pry
+word.split[1][0] =~ /[aeiou]/ ? word.split[1].gsub(/([aeiou])(\w+)*/, '\1\2way') : oldfake.split[1].gsub(/([^aeiou])(\w+)*/, '\2\1ay')
+
   end
 
 
